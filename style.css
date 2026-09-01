@@ -1,0 +1,494 @@
+/* Paleta basada en Guía de Marca */
+:root {
+  --color-naranja: #F26A1B;
+  --color-verde: #1F6B3A;
+  --color-verde-claro: #2F8B4A;
+  --color-fondo: #F7F7F7;
+  --color-texto: #333333;
+  --color-texto-suave: #666666;
+  --color-blanco: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(135deg, var(--color-verde), var(--color-naranja));
+  color: var(--color-blanco);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('icono-mueve-tu-casa.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-logo-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: var(--color-blanco);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: var(--color-fondo);
+  padding: 3rem 0 2.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-verde);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-texto-suave);
+}
+
+.hero-highlight {
+  font-weight: 600;
+  color: var(--color-naranja);
+}
+
+.hero-list {
+  margin: 1rem 0 1.5rem;
+  list-style: none;
+}
+
+.hero-list li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-texto);
+}
+
+.hero-list li::before {
+  content: "➤";
+  color: var(--color-verde);
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  background-color: var(--color-verde-claro);
+}
+
+.hero-secondary-text {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.hero-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-blanco);
+  background-image: url('banner-mueve-tu-casa.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 260px;
+}
+
+section {
+  padding: 2.5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-verde);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-texto-suave);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  padding: 1.5rem 1.3rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.benefit-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  background-color: rgba(31, 107, 58, 0.08);
+  color: var(--color-verde);
+  font-size: 1.2rem;
+}
+
+.benefit-title {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--color-texto);
+}
+
+.benefit-text {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text p {
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.about-badge {
+  display: inline-block;
+  background-color: rgba(242, 106, 27, 0.08);
+  color: var(--color-naranja);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.about-highlight {
+  font-weight: 600;
+  color: var(--color-verde);
+}
+
+.about-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-blanco);
+  min-height: 220px;
+  background-image: url('logo-mueve-tu-casa.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  padding: 1.4rem 1.3rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.testimonial-quote {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+  margin-bottom: 0.9rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-texto);
+}
+
+.testimonial-meta {
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+.testimonial-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-naranja);
+}
+
+.cta-block {
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-verde), var(--color-naranja));
+  color: var(--color-blanco);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cta-block p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.cta-number {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: var(--color-blanco);
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--color-blanco);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-texto);
+}
+
+.faq-answer {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+  display: none;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-toggle {
+  font-size: 1.2rem;
+  color: var(--color-verde);
+}
+
+footer {
+  background-color: #111111;
+  color: var(--color-blanco);
+  padding: 1.8rem 0 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-brand {
+  font-size: 0.9rem;
+  color: #CCCCCC;
+}
+
+.footer-brand strong {
+  color: var(--color-naranja);
+}
+
+.footer-social {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #CCCCCC;
+}
+
+.footer-social a:hover {
+  color: var(--color-naranja);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #777777;
+}
+
+/* Animaciones suaves */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero-grid,
+  .about-grid,
+  .benefits-grid,
+  .testimonials-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 2.2rem;
+  }
+
+  header {
+    position: static;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-social {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .benefit-card,
+  .testimonial-card {
+    padding: 1.2rem 1rem;
+  }
+}
