@@ -492,3 +492,18 @@ footer {
     padding: 1.2rem 1rem;
   }
 }
+.testimonial-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 25%;
+  overflow: hidden;
+  margin: 0 auto 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--color-verde);
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
